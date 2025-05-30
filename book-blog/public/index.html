@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание заказа на мебель</title>
+</head>
+<body>
+    <h1>Форма заказа на мебель</h1>
+    <form method="POST" action="src/Handlers/CreateOrderHandler.php">
+        <label>Имя заказчика:<br>
+            <input type="text" name="customer_name" required>
+        </label><br><br>
+
+        <label>Тип мебели:<br>
+            <input type="text" name="furniture_type" required>
+        </label><br><br>
+
+        <label>Материал:<br>
+            <input type="text" name="material" required>
+        </label><br><br>
+
+        <label>Габариты:<br>
+            <input type="text" name="dimensions" required>
+        </label><br><br>
+
+        <label>Дополнительные пожелания:<br>
+            <textarea name="notes"></textarea>
+        </label><br><br>
+
+        <button type="submit">Оформить заказ</button>
+    </form>
+</body>
+</html>
